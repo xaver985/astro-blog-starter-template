@@ -7,7 +7,6 @@
 
 :root {
   color-scheme: light dark;
-
   --accent: #2337ff;
   --accent-hover: #000d8a;
   --background: #ffffff;
@@ -109,29 +108,12 @@ h6 {
   letter-spacing: 0;
 }
 
-h1 {
-  font-size: 3.052rem;
-}
-
-h2 {
-  font-size: 2.441rem;
-}
-
-h3 {
-  font-size: 1.953rem;
-}
-
-h4 {
-  font-size: 1.563rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
+h1 { font-size: 3.052rem; }
+h2 { font-size: 2.441rem; }
+h3 { font-size: 1.953rem; }
+h4 { font-size: 1.563rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
 
 p {
   margin: 0 0 1rem;
@@ -172,12 +154,37 @@ img {
   border-radius: 8px;
 }
 
+/*
+ * 博客列表头图：在头图元素上添加 class="blog-cover"。
+ * 选择器使用较高优先级，以覆盖组件中普通的 img { width: 100%; }。
+ */
+img.blog-cover {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: 360px;
+  max-height: 360px;
+  margin-inline: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+/* 正文图片不受头图尺寸影响 */
+.prose img,
+article img:not(.blog-cover) {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+
 figure {
   max-width: 100%;
   margin: 2rem 0;
 }
 
-figure img {
+figure img:not(.blog-cover) {
   width: auto;
   max-width: 100%;
   margin-inline: auto;
@@ -337,20 +344,17 @@ hr {
     padding-block: 1.5rem;
   }
 
-  h1 {
-    font-size: 2.25rem;
-  }
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.3rem; }
 
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h4 {
-    font-size: 1.3rem;
+  img.blog-cover {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    max-height: 300px;
+    aspect-ratio: 16 / 9;
   }
 
   pre {
