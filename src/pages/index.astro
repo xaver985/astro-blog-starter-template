@@ -8,7 +8,7 @@ const interests = ['Domains', 'Email', 'Linux', 'VPS', 'Networking', 'Self-hosti
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
@@ -20,10 +20,10 @@ const interests = ['Domains', 'Email', 'Linux', 'VPS', 'Networking', 'Self-hosti
 				<p class="eyebrow">LEWISW.NET</p>
 				<h1 id="page-title">Lewis Wang</h1>
 				<p class="summary">
-				Takes an interest in network-related stuff.
+				Interested in domains, email, networking and self-hosting.
 				</p>
 
-				<nav class="contact-links" aria-label="Contact me">
+				<nav class="contact-links" aria-label="Contact links">
 					<a class="primary-link" href="mailto:i@lewisw.net">i@lewisw.net</a>
 					<a href="https://github.com/xaver985" target="_blank" rel="noreferrer">
 						GitHub
@@ -35,16 +35,17 @@ const interests = ['Domains', 'Email', 'Linux', 'VPS', 'Networking', 'Self-hosti
 				<h2 id="about-title">About</h2>
 				<div class="about-content">
 					<p>
-					Hello, it's Lewis. I often go by lewisw. 
+					Hello, I'm Lewis. I usually go by lewisw online.
 					</p>
 					<p>
-					I'm interested in domains, networks and VPSes.
+					I'm interested in domains, email, Linux, networking and self-hosting,
+			mostly through running and maintaining my own services.
 					</p>
 				</div>
 			</section>
 
 			<section class="interests" aria-labelledby="interests-title">
-				<h2 id="interests-title">Exploring</h2>
+				<h2 id="interests-title">Currently exploring</h2>
 				<ul>
 					{interests.map((interest) => <li>{interest}</li>)}
 				</ul>
