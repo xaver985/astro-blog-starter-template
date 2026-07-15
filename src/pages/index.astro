@@ -3,48 +3,183 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const interests = ['Domains', 'Email', 'Linux', 'VPS', 'Networking', 'Self-hosting'];
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
+
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="intro" aria-labelledby="page-title">
+				<p class="eyebrow">LEWISW.NET</p>
+				<h1 id="page-title">Lewis Wang</h1>
+				<p class="summary">
+				Takes an interest in network-related stuff.
+				</p>
+
+				<nav class="contact-links" aria-label="Contact me">
+					<a class="primary-link" href="mailto:i@lewisw.net">i@lewisw.net</a>
+					<a href="https://github.com/xaver985" target="_blank" rel="noreferrer">
+						GitHub
+					</a>
+				</nav>
+			</section>
+
+			<section class="about" aria-labelledby="about-title">
+				<h2 id="about-title">About</h2>
+				<div class="about-content">
+					<p>
+					Hello, it's Lewis. I often go by lewisw. 
+					</p>
+					<p>
+					I'm interested in domains, networks and VPSes.
+					</p>
+				</div>
+			</section>
+
+			<section class="interests" aria-labelledby="interests-title">
+				<h2 id="interests-title">Exploring</h2>
+				<ul>
+					{interests.map((interest) => <li>{interest}</li>)}
+				</ul>
+			</section>
 		</main>
+
 		<Footer />
 	</body>
 </html>
+
+<style>
+	main {
+		width: min(100% - 2rem, 760px);
+		margin: 0 auto;
+		padding: 5rem 0 4rem;
+	}
+
+	section {
+		padding: 3rem 0;
+		border-bottom: 1px solid rgb(128 128 128 / 22%);
+	}
+
+	.intro {
+		padding-top: 1.5rem;
+	}
+
+	.eyebrow {
+		margin: 0 0 1.25rem;
+		color: var(--accent, #2563eb);
+		font-size: 0.8rem;
+		font-weight: 700;
+		letter-spacing: 0;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 3.5rem;
+		line-height: 1.08;
+		letter-spacing: 0;
+	}
+
+	.summary {
+		max-width: 640px;
+		margin: 1.5rem 0 0;
+		color: rgb(80 80 80);
+		font-size: 1.2rem;
+		line-height: 1.8;
+	}
+
+	.contact-links {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	.contact-links a {
+		font-weight: 600;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.3rem;
+	}
+
+	.primary-link {
+		color: var(--accent, #2563eb);
+	}
+
+	h2 {
+		margin: 0 0 1.5rem;
+		font-size: 1.35rem;
+		letter-spacing: 0;
+	}
+
+	.about-content {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 2rem;
+	}
+
+	.about-content p {
+		margin: 0;
+		line-height: 1.9;
+	}
+
+	.interests {
+		border-bottom: 0;
+	}
+
+	.interests ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.interests li {
+		display: flex;
+		align-items: center;
+		font-weight: 600;
+	}
+
+	.interests li:not(:last-child)::after {
+		content: '·';
+		margin: 0 0.75rem;
+		color: rgb(128 128 128);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.summary {
+			color: rgb(190 190 190);
+		}
+	}
+
+	@media (max-width: 640px) {
+		main {
+			padding-top: 3rem;
+		}
+
+		section {
+			padding: 2.5rem 0;
+		}
+
+		h1 {
+			font-size: 2.6rem;
+		}
+
+		.summary {
+			font-size: 1.05rem;
+		}
+
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 1.25rem;
+		}
+	}
+</style>
