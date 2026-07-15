@@ -90,7 +90,8 @@ body {
 }
 
 main {
-  width: min(720px, calc(100% - 2rem));
+  width: 720px;
+  max-width: calc(100% - 2rem);
   margin-inline: auto;
   padding-block: 3rem;
 }
@@ -172,7 +173,14 @@ img {
 }
 
 figure {
+  max-width: 100%;
   margin: 2rem 0;
+}
+
+figure img {
+  width: auto;
+  max-width: 100%;
+  margin-inline: auto;
 }
 
 figcaption {
@@ -323,7 +331,9 @@ hr {
   }
 
   main {
-    width: min(100% - 2rem, 720px);
+    width: auto;
+    max-width: none;
+    margin-inline: 1rem;
     padding-block: 1.5rem;
   }
 
