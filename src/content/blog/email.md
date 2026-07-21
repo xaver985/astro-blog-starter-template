@@ -2,7 +2,7 @@
 title: "How I studied English"
 description: ""
 pubDate: "Jul 21 2026"
-heroImage: ""
+heroImage: "/mammiya.jpg"
 ---
 
 It's simple
