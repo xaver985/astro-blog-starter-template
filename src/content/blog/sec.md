@@ -2,7 +2,7 @@
 title: "Why I chose lewisw.net"
 description: "The story behind the current domain name"
 pubDate: "Jul 21 2026"
-heroImage: "/kazusa.jpg"
+heroImage: "/band.jpg"
 ---
 
 As I mentioned elsewhere on this site, I usually go by **lewisw** online, while Lewis is the English name I use.
