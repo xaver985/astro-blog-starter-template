@@ -15,9 +15,9 @@ const links = [
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 	<head>
-		<BaseHead title={`友链 - ${SITE_TITLE}`} description="我的朋友们" />
+		<BaseHead title={`Links - ${SITE_TITLE}`} description="My friends" />
 		<style>
 			.links-grid {
 				display: grid;
@@ -73,8 +73,8 @@ const links = [
 	<body>
 		<Header />
 		<main>
-			<h1>友链</h1>
-			<p>欢迎互换友链，请通过邮件或社交媒体联系我。</p>
+			<h1>Links</h1>
+			<p>Contact me if you want your site listed here</p>
 			<div class="links-grid">
 				{links.map((link) => (
 					<a class="link-card" href={link.url} target="_blank" rel="noopener">
