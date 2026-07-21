@@ -3,8 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-
-const interests = ['Domains', 'Email', 'Linux', 'VPS', 'Networking', 'Self-hosting'];
 ---
 
 <!doctype html>
@@ -39,16 +37,10 @@ const interests = ['Domains', 'Email', 'Linux', 'VPS', 'Networking', 'Self-hosti
 					</p>
 					<p>
 					I'm interested in domains, email, Linux, networking and self-hosting,
-			mostly through running and maintaining my own services.
+					mostly through running and maintaining my own services.
+					I also have a passion for the English language and Chinese culture.
 					</p>
 				</div>
-			</section>
-
-			<section class="interests" aria-labelledby="interests-title">
-				<h2 id="interests-title">Currently exploring</h2>
-				<ul>
-					{interests.map((interest) => <li>{interest}</li>)}
-				</ul>
 			</section>
 		</main>
 
@@ -66,6 +58,10 @@ const interests = ['Domains', 'Email', 'Linux', 'VPS', 'Networking', 'Self-hosti
 	section {
 		padding: 3rem 0;
 		border-bottom: 1px solid rgb(128 128 128 / 22%);
+	}
+
+	section:last-child {
+		border-bottom: 0;
 	}
 
 	.intro {
@@ -128,31 +124,6 @@ const interests = ['Domains', 'Email', 'Linux', 'VPS', 'Networking', 'Self-hosti
 	.about-content p {
 		margin: 0;
 		line-height: 1.9;
-	}
-
-	.interests {
-		border-bottom: 0;
-	}
-
-	.interests ul {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-
-	.interests li {
-		display: flex;
-		align-items: center;
-		font-weight: 600;
-	}
-
-	.interests li:not(:last-child)::after {
-		content: '·';
-		margin: 0 0.75rem;
-		color: rgb(128 128 128);
 	}
 
 	@media (prefers-color-scheme: dark) {
