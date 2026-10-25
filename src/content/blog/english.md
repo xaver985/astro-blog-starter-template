@@ -6,12 +6,6 @@ updatedDate: "Oct 25 2026"
 heroImage: "/mammiya.jpg"
 ---
 
-<!--
-  草稿说明：
-  - 正文只用了你提供的经历，没有补充你没说过的细节。
-  - 带 TODO 的注释是需要你补充或确认的地方，发布前删掉所有注释。
--->
-
 I taught myself English. Looking back, the method hardly changed over the years. I would take a text, read it until I could read it fluently, recite it, write it out from memory, and translate it. What changed was the material: New Concept English in secondary school, then novels and exam passages at university.
 
 ## New Concept English
@@ -41,4 +35,4 @@ Most of the texts in *New Concept English* Book 4 are argumentative essays by we
 
 I personally don't think that one could study English well merely by grinding loads of problem sets. You have to read, throw yourself into the world of the English language, and immerse yourself in it. Only in this way are you able to think like native speakers.
 
-<!-- TODO: 可以补一两句给正在学英语的读者的建议，也可以不写。 -->
+My only advice is to read more and use English more.
