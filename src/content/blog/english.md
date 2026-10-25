@@ -18,18 +18,16 @@ I taught myself English. Looking back, the method hardly changed over the years.
 
 Starting *New Concept English* in junior high school was my family's suggestion. I finished Book 2 in junior high, and Books 3 and 4 in senior high school. I studied all of them on my own.
 
-<!-- TODO: 每天或每周大概花多少时间？可以写，也可以不写。 -->
-
 ## Four steps for every lesson
 
-I treated each lesson the same way.
+I studied one lesson a day, and I treated each lesson the same way.
 
 1. **Read it until it is fluent.** I read the text over and over until I could read it smoothly.
 2. **Recite it.** I learned the whole text by heart.
 3. **Write it out from memory.** With the book closed, I wrote the text down, then checked it against the original.
 4. **Translate it.** I translated the text from English into Chinese. When I got something wrong, I checked it against the original, corrected it, and memorised the right translation.
 
-<!-- TODO: 这四步分别给你带来了什么？比如背诵对语感、默写对拼写和语法的作用，用你自己的体会写。 -->
+This routine strengthened my feel for the language. I have never memorised vocabulary. Ever since I was young, I have been able to understand English directly in English, without translating it into Chinese in my head. Working through texts this way made that intuitive understanding stronger.
 
 ## Novels and TEM-8 passages at university
 
