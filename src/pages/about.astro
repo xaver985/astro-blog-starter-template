@@ -1,45 +1,61 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Base from '../layouts/Base.astro';
 ---
 
-<Layout
-	title="About Me"
-	description="A little about Lewis Wang and the interests behind this website."
-	pubDate={new Date('July 15 2026')}
->
-	<p>
-		Hi, I'm Lewis Wang. I usually go by <strong>lewisw</strong> online.
-		I'm from China, and Lewis is the English name I use online and in international contexts.
-	</p>
+<Base title="About · Lewisw" description="A little about Lewis Wang and the interests behind this website.">
+	<article>
+		<header class="head">
+			<p class="label">About</p>
+			<h1 class="page-title">Lewis Wang</h1>
+		</header>
 
-	<p>
-		I'm not a professional developer. My interest in technology grew through setting up and
-		maintaining services for my own use. Along the way, I've learned about domains, email,
-		Linux, virtual private servers, networking and self-hosting by working through practical
-		problems as they came up.
-	</p>
+		<div class="prose">
+			<p>
+				Hi, I'm Lewis Wang. I usually go by <strong>lewisw</strong> online.
+				I'm from China, and Lewis is the English name I use online and in international contexts.
+			</p>
 
-	<p>
-		I'm particularly interested in personal domains and email: how a domain represents an
-		online identity, how email services differ in practice, and how DNS and mail authentication
-		work together. I also enjoy learning more about the infrastructure behind the services I
-		use every day.
-	</p>
+			<p>
+				I'm not a professional developer. My interest in technology grew through setting up and
+				maintaining services for my own use. Along the way, I've learned about domains, email,
+				Linux, virtual private servers, networking and self-hosting by working through practical
+				problems as they came up.
+			</p>
 
-	<p>
-		This website is my personal home on the web. For now, it serves as a simple introduction
-		and a central place for my links. Over time, I plan to publish occasional notes about things
-		I've tried, problems I've solved and decisions I've made. Some posts may be in English and
-		others in Chinese.
-	</p>
+			<p>
+				I'm particularly interested in personal domains and email: how a domain represents an
+				online identity, how email services differ in practice, and how DNS and mail authentication
+				work together. I also enjoy learning more about the infrastructure behind the services I
+				use every day.
+			</p>
 
-	<p>
-		I don't intend to publish on a fixed schedule. I'd rather write when I have an experience
-		or idea worth preserving than post simply for the sake of keeping the site active.
-	</p>
+			<p>
+				This website is my personal home on the web. For now, it serves as a simple introduction
+				and a central place for my links. Over time, I plan to publish occasional notes about things
+				I've tried, problems I've solved and decisions I've made. Some posts may be in English and
+				others in Chinese.
+			</p>
 
-	<p>
-		You can find me on <a href="https://github.com/xaver985">GitHub</a> or contact me at
-		<a href="mailto:hello@lewisw.net">hello@lewisw.net</a>.
-	</p>
-</Layout>
+			<p>
+				I don't intend to publish on a fixed schedule. I'd rather write when I have an experience
+				or idea worth preserving than post simply for the sake of keeping the site active.
+			</p>
+
+			<p>
+				You can find me on <a href="https://github.com/xaver985" rel="me">GitHub</a> or contact me at
+				<a href="mailto:hello@lewisw.net">hello@lewisw.net</a>.
+			</p>
+		</div>
+	</article>
+</Base>
+
+<style>
+	article {
+		max-width: var(--measure);
+		margin: 0 auto;
+	}
+
+	.head {
+		margin-bottom: 2.5rem;
+	}
+</style>

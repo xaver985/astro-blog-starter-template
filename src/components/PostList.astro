@@ -1,0 +1,92 @@
+---
+import type { Post } from '../lib/posts';
+
+interface Props {
+	posts: Post[];
+	/** Show the year next to each date (used when posts are not grouped by year). */
+	showYear?: boolean;
+}
+
+const { posts, showYear = false } = Astro.props;
+
+const format = (date: Date) =>
+	date.toLocaleDateString('en-US', {
+		month: 'short',
+		day: 'numeric',
+		...(showYear ? { year: 'numeric' } : {}),
+		timeZone: 'UTC',
+	});
+---
+
+<ol class="post-list">
+	{
+		posts.map((post) => (
+			<li lang={post.data.lang}>
+				<time datetime={post.data.pubDate.toISOString()}>{format(post.data.pubDate)}</time>
+				<div class="entry">
+					<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+					{post.data.description && <p>{post.data.description}</p>}
+				</div>
+			</li>
+		))
+	}
+</ol>
+
+<style>
+	.post-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		display: grid;
+		grid-template-columns: 6.5rem 1fr;
+		gap: 1.5rem;
+		padding: 1.1rem 0;
+		border-top: 1px solid var(--rule);
+	}
+
+	li:first-child {
+		border-top: 0;
+	}
+
+	time {
+		padding-top: 0.25rem;
+		color: var(--muted);
+		font-size: 0.88rem;
+		font-variant-numeric: tabular-nums;
+		white-space: nowrap;
+	}
+
+	a {
+		color: var(--heading);
+		font-family: var(--font-serif);
+		font-size: 1.22rem;
+		font-weight: 600;
+		line-height: 1.4;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: var(--accent);
+	}
+
+	p {
+		margin: 0.3rem 0 0;
+		color: var(--muted);
+		font-size: 0.95rem;
+		line-height: 1.6;
+	}
+
+	@media (max-width: 560px) {
+		li {
+			grid-template-columns: 1fr;
+			gap: 0.2rem;
+		}
+
+		time {
+			padding-top: 0;
+		}
+	}
+</style>

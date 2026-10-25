@@ -13,6 +13,8 @@ const blog = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
+		// Language of the post, e.g. "zh-CN" for Chinese. Defaults to English.
+		lang: z.string().default('en'),
 	}),
 });
 
