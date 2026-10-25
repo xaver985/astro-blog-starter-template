@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<Base title={`Page not found · ${SITE_TITLE}`} description="This page could not be found.">
+	<section>
+		<p class="label">404</p>
+		<h1 class="page-title">Page not found</h1>
+		<p class="page-intro">
+			The page you were looking for doesn't exist or has moved. Try the <a href="/blog">list of posts</a>
+			or go back to the <a href="/">home page</a>.
+		</p>
+	</section>
+</Base>
