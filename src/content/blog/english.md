@@ -34,13 +34,13 @@ I treated each lesson the same way.
 
 ## Novels and TEM-8 passages at university
 
-At university I started reading novels in the original English.
-
-<!-- TODO: 读过哪些小说？哪一本印象最深？读的时候查不查词典？ -->
+At university I started reading novels in the original English. I read part of *The Great Gatsby* and read *Nineteen Eighty-Four* once. *The Lord of the Rings* I have read three or four times. It left the deepest impression on me, and it is still my favourite English novel. The descriptions are rich in detail, the world is vast, and the whole book reads like an epic.
 
 I also kept using the four steps on a new kind of material: the reading passages from past TEM-8 papers. TEM-8 (Test for English Majors, Band 8) is the highest level of the national English exam for English majors in China. I recited these passages, wrote them out from memory and translated them, just as I had done with New Concept English.
 
-<!-- TODO: 为什么选专八阅读？和新概念相比，这些文章难在哪里？ -->
+Most of the texts in *New Concept English* Book 4 are argumentative essays by well-known writers. The TEM-8 passages are far more varied: argumentative essays, literary prose, fiction, informal essays and more. They are also much longer, and most of them are harder to understand than the texts in Book 4.
+
+<!-- TODO: 为什么选专八阅读来练？可以写一句，也可以不写。 -->
 
 ## Read a lot
 
