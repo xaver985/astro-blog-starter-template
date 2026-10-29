@@ -5,11 +5,6 @@ pubDate: "Oct 29 2026"
 lang: "zh-CN"
 ---
 
-<!--
-  草稿说明：
-  - 带 TODO 的注释是需要你补充或确认的地方，发布前删掉所有注释。
--->
-
 [Why I chose lewisw.net](/blog/domain/) 讲了我为什么选 lewisw.net 作为主域名。除了放这个博客的 lewisw.net，我手里其他的域名几乎都只用来做域名邮箱，收信的几个域名都配置了 MTA-STS，过程写在 [Hardening my domains' email with MTA-STS](/blog/mta-sts/) 里。这篇按购买的先后顺序，记录一下这些域名是怎么来的。
 
 | 域名 | 后缀所属 | 注册商 |
@@ -52,9 +47,7 @@ DNSSEC 也费了些周折。我先让 AI 帮我查了 .ax 这个顶级域有没�
 
 每次买之前，我都会先在 tld-list 上查哪家注册商最便宜。.to 的价格有点奇怪，最便宜的是 Spaceship，注册和续费都是一年 20.70 美元；第二便宜的 Namecheap 常规价要 39.98 美元，用优惠码也要 31.98 美元。
 
-lew.lu 是在 Hostinger 买的。Hostinger 的 DNSSEC 设置和 Cloudflare 不兼容，两家用的签名算法不一样。
-
-<!-- TODO: lew.lu 的 DNSSEC 问题最后是怎么处理的？ -->
+lew.lu 是在 Hostinger 买的。Hostinger 的 DNSSEC 设置和 Cloudflare 不兼容，两家用的签名算法不一样。我后来也没再管它，lew.lu 到现在都没有启用 DNSSEC。
 
 lew.bz 是在 Sav.com 买的，现在注册和续费都是 16.63 美元。买的时候觉得还行，到手以后才发现 lew 后面接 bz 不太好看，现在就放着等它过期。
 
@@ -64,6 +57,6 @@ lew.bz 是在 Sav.com 买的，现在注册和续费都是 16.63 美元。买的
 
 候选的有 sv、sj、sz 几个，我是凭视觉上的搭配和美感挑的。sz 看着有点锐利，sj.je 里有两个 j，重心有点靠下，最后选了 sv.je，2026 年 8 月注册。它是我手里最贵的域名，在 Spaceship 注册和续费都是 51.60 美元。比价网站上首年最便宜的是 Atom，13.50 美元，但它续费要 54.10 美元。
 
-现在我的主邮箱也迁到了 sv.je 上。
+## 现在
 
-<!-- TODO: 结尾可以写一两句现在的想法，比如以后哪些会续费、哪些会放弃，也可以不写。 -->
+从 lewis.net.im 到 sv.je，不算 lewisw.net，我前后一共买了九个域名。现在主要在用的是两个：lewisw.net 放这个博客，sv.je 收发主邮箱。
