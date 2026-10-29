@@ -15,9 +15,13 @@ export default defineConfig({
 			themes: { light: "github-light", dark: "github-dark" },
 		},
 	},
+	// Keep the whitespace handling Astro used before v7. The newer "jsx" mode
+	// drops spaces between elements on separate lines (e.g. "posts or" -> "postsor").
+	compressHTML: true,
+	// The site is fully static, so it needs neither sessions (Cloudflare KV)
+	// nor on-demand image processing (Cloudflare Images).
+	session: false,
 	adapter: cloudflare({
-		platformProxy: {
-			enabled: true,
-		},
+		imageService: "passthrough",
 	}),
 });
