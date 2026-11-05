@@ -48,6 +48,10 @@ A few habits have made the results more predictable.
 
 Of the three I pay for, Claude Pro is the best value for me. The usage limits are generous, the model is strong, and its summaries of my email and RSS articles pick out what I care about. It is also good at understanding what I actually mean.
 
+Compared with ChatGPT Plus, the biggest gap is usage. When I give GPT 6 Astra some work at medium effort, my usage drops fast. A similar job with Opus 5.5 at high effort used about 1% of my weekly limit.
+
+The other difference is writing in Chinese. GPT's Chinese sounds heavily machine-written. It sometimes makes suggestions that don't fit the situation, or turns a plain point into a grand conclusion about something larger. A skill meant to remove that AI tone helped very little. With Opus, this almost never happens. Its Chinese reads fluently by default, and the same skill only makes it better.
+
 ## Where I still do the work
 
 I still decide what the site should be and what goes on it. I write the facts, choose what to publish, and merge every change myself. The agent saves me the hours between deciding and having it done.
