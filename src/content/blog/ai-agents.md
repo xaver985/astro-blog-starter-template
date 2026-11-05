@@ -12,7 +12,7 @@ Working this way has given me a clearer idea of what to hand over, what to keep,
 
 The first model I used was GPT-3.5, and for a long time my impression was simple: AI was a chat tool. I asked it questions and it answered.
 
-That changed recently, when I installed Operit on my phone. It runs as a local agent on the device. Once I granted it permissions, it could sort my files and suggest what to clean up, based on how much time I spend in each app, how much storage each one takes, and what I told it about my preferences. Around the same time, I gave an AI access to a remote machine over SSH and let it edit my NixOS configuration. It did that well too. I did all of this with 6.1 Sol.
+That changed recently, when I installed Operit on my phone. It runs as a local agent on the device. Once I granted it permissions, it could sort my files and suggest what to clean up, based on how much time I spend in each app, how much storage each one takes, and what I told it about my preferences. Around the same time, I gave an AI access to a remote machine over SSH and let it edit my NixOS configuration. It did that well too. I did all of this with GPT 6.1 Sol.
 
 Last month I subscribed to X Premium, which comes with the Grok bot. I now have it summarize my email every day and sort through the articles in my RSS feeds. I also pay for ChatGPT Plus, and a few days ago I added Claude Pro.
 
@@ -30,11 +30,11 @@ Writing is different. The agent can structure a post, keep the tone consistent a
 
 So for posts, I now ask for a draft with the gaps marked. The first version of [How I studied English](/blog/english/) had `TODO` comments wherever a personal detail was missing, and I filled them in over several rounds. For [the post about my other domains](/blog/other-domains/), I had it look up the actual registration prices instead of guessing them. The finished posts read like mine because the facts in them are mine.
 
-<!-- TODO: Any example of the agent getting a fact wrong, or writing something that didn't sound like you? -->
-
 ## How I hand it work
 
 A few habits have made the results more predictable.
+
+**Do it all on the phone.** I don't sit down at a computer for any of this. I describe the task on my phone, and I review and merge the result there too.
 
 **One task, one pull request.** Each request gets its own branch and pull request. On a phone, a focused diff is something I can actually review. A large mixed one I would end up merging without reading.
 
@@ -44,8 +44,6 @@ A few habits have made the results more predictable.
 
 **Correct it in the same thread.** When something is off, I reply with the specific problem rather than starting over. The agent keeps the context, and the fix usually lands as a small follow-up commit.
 
-<!-- TODO: Any habits of your own to add, e.g. writing instructions in Chinese, or how you review on mobile? -->
-
 ## Which subscription I'd keep
 
 Of the three I pay for, Claude Pro is the best value for me. The usage limits are generous, the model is strong, and its summaries of my email and RSS articles pick out what I care about. It is also good at understanding what I actually mean.
@@ -54,4 +52,4 @@ Of the three I pay for, Claude Pro is the best value for me. The usage limits ar
 
 I still decide what the site should be and what goes on it. I write the facts, choose what to publish, and merge every change myself. The agent saves me the hours between deciding and having it done.
 
-<!-- TODO: Closing thought: has this changed how you work outside this site? -->
+Overall, these tools have made me more productive. I no longer have to work out which CSS will make the site look good, open my phone's settings to see which app is taking up the most space, or spend time reading the nixpkgs documentation.
