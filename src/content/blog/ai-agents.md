@@ -1,14 +1,20 @@
 ---
 title: "What I've learned from working with an AI agent"
-description: "Notes from letting an AI coding agent maintain this site and help draft its posts: what it does well, where it needs me, and how I hand it work."
+description: "From GPT-3.5 as a chatbot to agents that manage my phone, my NixOS machine and this site: what they do well, where they need me, and which subscription I would keep."
 pubDate: "Nov 5 2026"
 ---
 
-<!-- TODO: When did you start using AI agents, and which ones besides Claude Code? -->
-
 Most of the recent changes to this site were made by an AI agent. It redesigned the layout, upgraded the site to Astro 7, cleaned up a pile of dependency updates, and helped me write the last two posts. I usually start a task from my phone, the agent works in a cloud sandbox, and the result comes back as a pull request that I read and merge.
 
-After a few weeks of working this way, I have a clearer idea of what to hand over, what to keep, and how to ask.
+Working this way has given me a clearer idea of what to hand over, what to keep, and how to ask. But it took me a while to think of AI as more than something to chat with.
+
+## From chatbot to agent
+
+The first model I used was GPT-3.5, and for a long time my impression was simple: AI was a chat tool. I asked it questions and it answered.
+
+That changed recently, when I installed Operit on my phone. It runs as a local agent on the device. Once I granted it permissions, it could sort my files and suggest what to clean up, based on how much time I spend in each app, how much storage each one takes, and what I told it about my preferences. Around the same time, I gave an AI access to a remote machine over SSH and let it edit my NixOS configuration. It did that well too. I did all of this with 6.1 Sol.
+
+Last month I subscribed to X Premium, which comes with the Grok bot. I now have it summarize my email every day and sort through the articles in my RSS feeds. I also pay for ChatGPT Plus, and a few days ago I added Claude Pro.
 
 ## It is best at work that can be checked
 
@@ -39,6 +45,10 @@ A few habits have made the results more predictable.
 **Correct it in the same thread.** When something is off, I reply with the specific problem rather than starting over. The agent keeps the context, and the fix usually lands as a small follow-up commit.
 
 <!-- TODO: Any habits of your own to add, e.g. writing instructions in Chinese, or how you review on mobile? -->
+
+## Which subscription I'd keep
+
+Of the three I pay for, Claude Pro is the best value for me. The usage limits are generous, the model is strong, and its summaries of my email and RSS articles pick out what I care about. It is also good at understanding what I actually mean.
 
 ## Where I still do the work
 
